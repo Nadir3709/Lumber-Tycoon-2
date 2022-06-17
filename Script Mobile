@@ -120,6 +120,11 @@ CoreGui:SetCore("SendNotification", {
    print("pressed button")
 end)
 
+window:Button("Dupe Money", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Lumber-Tycoon-2/main/Dupe%20Money"))()
+   print("pressed button")
+end)
+
 window:Button("Anti Afk (Click)", function()
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
