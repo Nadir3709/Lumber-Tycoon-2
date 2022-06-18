@@ -19,7 +19,7 @@ ScreenGui.Parent = game.CoreGui
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new((0.337, 0,0.325, 0)
+ImageButton.Position = UDim2.new(0.337, 0,0.325, 0)
 ImageButton.Size = UDim2.new(0, 219,0, 136)
 ImageButton.Image = "http://www.roblox.com/asset/?id=9938555490"
 
