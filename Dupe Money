@@ -30,9 +30,9 @@ TextLabel.Position = UDim2.new(0, 0,0.818, 0)
 TextLabel.Size = UDim2.new(0, 219,0, 24)
 TextLabel.Font = Enum.Font.SciFi
 if game.Players.LocalPlayer.Name == "Funtactic11" then
-TextLabel.Text = "Welcome To Nadir Hub Funtactic11"
+TextLabel.Text = "Welcome To Nadir Hub | Funtactic11"
 else
-TextLabel.Text = "Welcome To Nadir Hub "..game.Players.LocalPlayer.Name
+TextLabel.Text = "Welcome To Nadir Hub | "..game.Players.LocalPlayer.Name
 end
 TextLabel.TextColor3 = Color3.new(0, 0, 0)
 TextLabel.TextScaled = true
