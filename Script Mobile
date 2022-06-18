@@ -125,24 +125,6 @@ window:Button("Dupe Money", function()
    print("pressed button")
 end)
 
-window:Button("Anti Afk (Click)", function()
-local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-   wait(1)
-   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
-   print("pressed button")
-end)
-
-window:Button("Rejoin", function()
-    repeat
-    wait()
-until game:IsLoaded()
-game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,game.JobId)
-   print("pressed button")
-end)
-
 local window = library:Window("Teleport")
 
 window:Button("Wood RUs", function()
@@ -182,5 +164,30 @@ end)
 
 window:Button("Spawn", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(155.40007, 2.99999928, 58, 3.11673701e-14, -4.60465905e-08, -1, 3.70108921e-09, 1, -4.60465905e-08, 1, -3.70108921e-09, 3.13377931e-14)
+   print("pressed button")
+end)
+
+local window = library:Window("Misc")
+
+window:Button("Anti Afk (Click)", function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+   print("pressed button")
+end)
+
+window:Button("Rejoin", function()
+    repeat
+    wait()
+until game:IsLoaded()
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId,game.JobId)
+   print("pressed button")
+end)
+
+window:Button("Close (Execute To Open)", function()
+    library:Destroy()
    print("pressed button")
 end)
